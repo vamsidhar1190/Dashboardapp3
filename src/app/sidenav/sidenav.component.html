@@ -1,0 +1,52 @@
+<div class="sidebar" [class.sidebar-close]="!openSidebar">
+   
+    <ul class="nav-links" id="nav-links">
+      <div class="">        
+        <img src="../../assets/image2.jpg" alt="" style="width: 200px; transform: translatex(-12px);">
+      </div>
+      <li *ngFor="let item of menuSidebar" #itemEl routerLinkActive="active">
+       <div *ngIf="item.sub_menu.length > 0" class="dropdown-title" (click)="showSubmenu(itemEl)">
+          <a>
+            <i [class]="item.icon" class="icons"></i>
+      <li><a class="link_name">{{item.link_name}}</a></li>
+      </a>
+      <i class='bx bxs-chevron-down arrow'></i>
+  </div>
+  <ul class="sub-menu" [class.blank]="item.sub_menu.length == 0">
+    <li><a class="link_name">{{item.link_name}}</a></li>
+    <li *ngFor="let item_sub of item.sub_menu" routerLinkActive="active">
+      <a [routerLink]="[item_sub.link]">{{item_sub.link_name}}</a>
+    </li>
+  </ul>
+  </li>
+  </ul>
+  </div>
+  <section class="home-section  mt-4" style="height: 100%;">
+    <div class="home-header ">
+      <div class="title  d-flex col-10">
+        <div class="d-flex col-8">
+              <div class="form-group has-search">
+            <input type="text" class="form-control searchBar " placeholder="Search Here" style="margin-left: -30%;">
+          </div>   
+  
+        </div>
+        <div class="col-1">
+          <div class=" bd-highlight  me-3 mb gap-3 d-flex m-1">
+            <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-comments text-1xl" pBadge value="5"
+                severity="success" style="font-size: 30px;"></i> </div>
+                <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-bell text-1xl" pBadge value="4" severity="danger" style="font-size: 30px;"></i></div>
+  
+                <div><img src="../../assets/123.jpeg" alt="" class="profile-imgs ms-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="surface-ground">
+      <router-outlet></router-outlet>
+
+  
+    </div>
+  </section>
+
+

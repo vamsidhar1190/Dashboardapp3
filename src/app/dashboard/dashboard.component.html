@@ -1,0 +1,257 @@
+<div class="d-flex gap-3 ms-3 mt-3">
+    <div class="card d-flex p-3" style="width: 25%;">
+        <div class="d-flex cards">
+            <div><img src="../../assets/man.svg" alt=""></div>
+            <div class=" dataheight" style="margin-right: 25%;">
+                <h3 style="font-size: 35px; font-weight: bold;color: #2e4765">520</h3>
+                <span class="mb-3" style="color: #b2b5c0;">Doctors</span>
+            </div>
+        </div>
+    </div>
+    <div class="card d-flex p-3" style="width: 25%;">
+        <div class="d-flex cards">
+            <div><img src="../../assets/cap.svg" alt=""></div>
+            <div class="dataheight" style="margin-right: 25%;">
+                <h3 style="font-size: 35px; font-weight: bold; color: #2e4765">6969</h3>
+                <span class="mb-3" style="color: #b2b5c0;">Nurses</span>
+            </div>
+        </div>
+    </div>
+    <div class="card d-flex p-3" style="width: 25%;">
+        <div class="d-flex cards">
+            <div><img src="../../assets/wheel.svg" alt=""></div>
+            <div class=" dataheight " style="margin-right: 25%;">
+                <h3 style="font-size: 35px; font-weight: bold; color: #2e4765">7509</h3>
+                <span class="mb-3" style="color: #b2b5c0;">Patients</span>
+            </div>
+        </div>
+    </div>
+    <div class="card d-flex p-3" style="width: 25%;">
+        <div class="d-flex cards ">
+            <div><img src="../../assets/pharma.svg" alt=""></div>
+            <div class=" dataheight " style="margin-right: 25%;">
+                <h3 style="font-size: 35px; font-weight: bold;color: #2e4765">2110</h3>
+                <span class="mb-3" style="color: #b2b5c0;">Pharmacusts</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card ms-3 mt-3">
+    <div id="chart">
+        <div class="m-3">
+            <h6 class="font-semibold" style="font-size: 20px;">Hospital Survey</h6>
+
+        </div>
+        <hr>
+        <div class="d-flex justify-content-around">
+            <div class="vamsi justify-content-center" style="text-align: center;">
+                <p class="chart font-semibold" style="font-size: 25px;color: #2e4765;">$ 30</p>
+                <span style="font-size: 15px;color: #b2b5c0;">Todays Income</span>
+            </div>
+            <div class="vamsi justify-content-center" style="text-align: center;">
+                <p class="chart font-semibold" style="font-size: 25px;color: #2e4765;">$ 100</p>
+                <span style="font-size: 15px;color: #b2b5c0;">This Weeks Income</span>
+            </div>
+            <div class="vamsi justify-content-center" style="text-align: center;">
+                <p class="chart font-semibold" style="font-size: 25px;color: #2e4765;">$ 550</p>
+                <span style="font-size: 15px;color: #b2b5c0;">This Months Income</span>
+            </div>
+            <div class="vamsi justify-content-center" style="text-align: center;">
+                <p class="chart font-semibold" style="font-size: 25px;color: #2e4765;">$ 15561</p>
+                <span style="font-size: 15px;color: #b2b5c0;">This Year's Income</span>
+            </div>
+
+        </div>
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+            [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis"
+            class=""></apx-chart>
+    </div>
+</div>
+
+
+<div class="d-flex ms-3 mt-3 gap-3">
+    <div class="card parent3-container" style="width: 60%;">
+        <p-treeTable [value]="files" [columns]="cols" [paginator]="true" [rows]="10" [scrollable]="false"
+            class="monthly-Invoice">
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns">
+                        {{ col.header }}
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+                <tr>
+                    <td *ngFor="let col of columns; let i = index">
+
+                        <img *ngIf="col.field === 'image'" [src]="rowData[col.field]"
+                            style="width: 50px; height: 50px; border-radius: 50%; margin-left: 35%;">
+                        <span *ngIf="col.field !== 'image'">{{ rowData[col.field] }}</span>
+                        <p-treeTableToggler [rowNode]="rowNode" * ngIf="i === 0"></p-treeTableToggler>
+
+                    </td>
+                </tr>
+            </ng-template>
+
+        </p-treeTable>
+    </div>
+
+    <div style="width: 40%;">
+        <div class="card" style="margin-bottom: 10px;">
+            <apx-chart [series]="series1" [chart]="chart1" [dataLabels]="dataLabels1" [markers]="markers1"
+                [title]="title1" [fill]="fill1" [yaxis]="yaxis1" [xaxis]="xaxis1" [tooltip]="tooltip1"
+                [autoUpdateSeries]="true"></apx-chart>
+        </div>
+
+        <div class="card">
+            <apx-chart [series]="series2" [chart]="chart2" [dataLabels]="dataLabels2" [markers]="markers2"
+                [title]="title2" [fill]="fill2" [yaxis]="yaxis2" [xaxis]="xaxis2" [tooltip]="tooltip2"
+                [autoUpdateSeries]="true"></apx-chart>
+        </div>
+    </div>
+</div>
+
+<div class="card ms-3 mt-3">
+    <div class="m-1">
+        <p class="font-bold ms-3 mt-2" style="font-size: 20px; color:#818e94 ;">Hospital Staff</p>
+        <hr>
+    </div>
+    <p-carousel [value]="doctor" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+
+            <div class="border-1 surface-border border-round m-2 text-center py-3 px-3">
+
+                <div class="mb-3">
+                    <img src={{product.image}} [alt]="product.name" class="w-6 shadow-2"
+                        style="border-radius: 50%; height: 100px; width: 80px;" />
+                </div>
+                <div>
+                    <h4 class="mb-1" style="color: #2e4765;">{{ product.name }}</h4>
+                    <h6 class="mt-0 mb-3 font-italic font-bold" style="color: #818e94;">{{ product.category }}</h6>
+
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+<div class="d-flex gap-3">
+    <div class="cardheight-all-parts ms-3 mt-3 card" style="width: 50%;">
+        <div class="cardheight">
+            <div class="boxheader">
+                <div class="main-title">
+                    <h3>Recent activiy</h3>
+                </div>
+
+            </div>
+            <hr>
+            <div class="timeline">
+                <ul>
+                    <li class="d-flex">
+                        <div class="activitybell" style="width: 10px; height: 10px;border-radius: 50%;"></div>
+                        <div class="activitywrap">
+
+                            <h6 class="font-bold" style="color: #2e4765;">5 min ago</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="d-flex">
+                        <div class="activitybell" style="width: 10px; height: 10px;border-radius: 50%;"></div>
+                        <div class="activitywrap">
+
+                            <h6 class="font-bold" style="color: #2e4765;">5 min ago</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="d-flex">
+                        <div class="activitybell" style="width: 10px; height: 10px;border-radius: 50%;"></div>
+                        <div class="activitywrap">
+
+                            <h6 class="font-bold" style="color: #2e4765;">5 min ago</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="d-flex">
+                        <div class="activitybell" style="width: 10px; height: 10px;border-radius: 50%;"></div>
+                        <div class="activitywrap">
+
+                            <h6 class="font-bold" style="color: #2e4765; margin: 0px;">5 min ago</h6>
+                            <p style="margin: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="width: 50%; padding: 30px; max-height: 400px;" class="mt-3 card">
+        <div class="boxheader">
+            <div class="main-title ">
+                <h3>Recent activiy</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="m-3">
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">USA</h2>
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">25%</h2>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 25%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">AFRICA</h2>
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">50%</h2>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar bg-info" style="width: 50%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">UK</h2>
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">75%</h2>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 75%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">CANADA</h2>
+                    <h2 style="font-size: 15px; font-weight: 700;" class="m-2">85%</h2>
+
+                </div>
+
+                <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="85">
+                    <div class="progress-bar bg-danger" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card ms-3 mt-3">
+    <div class="justify-content-center d-flex m-3 mt-4">
+        <p style="color: #2DAAB8;"> <span style="color: #818e94;">2020 © Influence - Designed by </span> Hospitals </p>
+    </div>
+</div>

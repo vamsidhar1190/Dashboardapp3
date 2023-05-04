@@ -1,0 +1,71 @@
+.cards {
+    justify-content: space-around;
+}
+
+.chart {
+    margin-bottom: 0px;
+}
+
+.dataheight {
+    line-height: 0px;
+}
+
+#chart {
+    margin: 35px;
+}
+
+.boxheader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    align-items: center;
+}
+.timeline h6, 
+.timeline p{
+    margin: 0 !important;
+}
+.cardheight {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}   
+
+.timeline ul {
+    border-left: 1px solid #ecfdff;
+}
+
+
+.activitybell {
+    background-color: #3BAFBD;
+}
+
+
+.cardheight .activitywrap {
+    position: relative;
+    padding-left: 15px !important;
+
+}
+
+
+.cardheight .activitywrap p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #818e94;
+    font-weight: 400;
+
+}
+
+.activitybell {
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+.bar {
+    height: 20px;
+    background-color: blue;
+  }
+
+  .footer{
+    justify-content: center;
+  }
