@@ -424,7 +424,7 @@ border-color: green;
   border-radius: 50%;
   height: 50px;
   width:50px;
-  transform: translateY(-13px);
+  transform: translateY(-5px);
 }
  .sidebar-close{
   h4{
@@ -433,4 +433,8 @@ visibility: hidden;
 }
 .sidebar{
   box-shadow: 1px 0px #ccc;
+}
+.header-content-info{
+  position: relative;
+  left: 37px;
 }

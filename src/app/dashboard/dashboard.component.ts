@@ -129,8 +129,7 @@ export class DashboardComponent implements OnInit {
       chart: {
         type: "bar",
         height: 350,
-
-
+        
       },
       plotOptions: {
         bar: {
@@ -155,9 +154,7 @@ export class DashboardComponent implements OnInit {
         enabled: false
       },
       yaxis: {
-        title: {
-          text: "Growth"
-        },
+        
         labels: {
           formatter: function (y) {
             return y.toFixed(0) + "%";
@@ -302,9 +299,7 @@ export class DashboardComponent implements OnInit {
           return (val / 1000000).toFixed(0);
         }
       },
-      title: {
-        text: "Report"
-      }
+     
     };
     this.xaxis1 = {
       type: "datetime"
@@ -372,9 +367,7 @@ export class DashboardComponent implements OnInit {
           return (val / 1000000).toFixed(0);
         }
       },
-      title: {
-        text: "Report"
-      }
+    
     };
     this.xaxis2 = {
       type: "datetime"

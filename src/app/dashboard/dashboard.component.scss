@@ -69,3 +69,13 @@
   .footer{
     justify-content: center;
   }
+  .chart-content-block{
+    overflow: hidden !important;
+  }
+  .chart-content-block    .apexcharts-canvas{
+    width: auto !important;
+  }
+  .chart-content-block  .apexcharts-canvas{
+width: auto !important;
+
+    }

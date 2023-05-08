@@ -29,33 +29,36 @@
   </ul>
   </div>
   <section class="home-section  mt-4" style="height: 100%;">
-    <div class="home-header ">
-      <div class="hamburger-menu">
-        <input type="checkbox" id="checkbox-hamburger-menu" [(ngModel)]="openSidebar" />
-        <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </label>
-      </div>
-      <div class="title  d-flex col-10">
-        <div class="d-flex col-8">
-              <div class="form-group has-search">
-            <input type="text" class="form-control searchBar " placeholder="Search Here" style="margin-left: -15%;">
-          </div>   
-  
+    <div class="container-fluid">
+      <div class="home-header ">
+        <div class="hamburger-menu">
+          <input type="checkbox" id="checkbox-hamburger-menu" [(ngModel)]="openSidebar" />
+          <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
         </div>
-        <div class="col-1">
-          <div class=" bd-highlight  me-3 mb gap-3 d-flex m-1">
-            <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-comments text-1xl" pBadge value="5"
-                severity="success" style="font-size: 30px;"></i> </div>
-                <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-bell text-1xl" pBadge value="4" severity="danger" style="font-size: 30px;"></i></div>
-  
-                <div><img src="./assets/123.jpeg" alt="" class="profile-imgs ms-3"></div>
+        <div class="title  d-flex col-10">
+          <div class="d-flex col-8">
+                <div class="form-group has-search">
+              <input type="text" class="form-control searchBar " placeholder="Search Here" style="margin-left: -15%;">
+            </div>   
+    
+          </div>
+          <div class="col-1 header-content-info">
+            <div class=" bd-highlight  me-3 mb gap-3 d-flex m-1">
+              <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-comments text-1xl" pBadge value="5"
+                  severity="success" style="font-size: 30px;"></i> </div>
+                  <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-bell text-1xl" pBadge value="4" severity="danger" style="font-size: 30px;"></i></div>
+    
+                  <div><img src="./assets/123.jpeg" alt="" class="profile-imgs"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+   
    
     <div class="surface-ground">
       <router-outlet></router-outlet>
