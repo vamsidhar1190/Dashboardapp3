@@ -14,6 +14,19 @@ import { TreeTableModule } from 'primeng/treetable';
 import { LoginComponent } from './login/login.component';
 import { CarouselModule } from 'primeng/carousel';
 import { TimelineModule } from 'primeng/timeline';
+import { Dashboard2Component } from './dashboard2/dashboard2.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { MailboxComponent } from './mailbox/mailbox.component';
+import { ChatComponent } from './chat/chat.component';
+import { FaqComponent } from './faq/faq.component';
+import { ElementsComponent } from './elements/elements.component';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { ChartboxesComponent } from './chartboxes/chartboxes.component';
+import { ProfileboxComponent } from './profilebox/profilebox.component';
+import { EventsComponent } from './events/events.component';
+import { ChartjsComponent } from './chartjs/chartjs.component';
+import { ApexchartsComponent } from './apexcharts/apexcharts.component';
 
 
 
@@ -22,7 +35,21 @@ import { TimelineModule } from 'primeng/timeline';
     AppComponent,
     SidenavComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    Dashboard2Component,
+    RegisterComponent,
+    ForgotpasswordComponent,
+    MailboxComponent,
+    ChatComponent,
+    FaqComponent,
+    ElementsComponent,
+    WidgetsComponent,
+    ChartboxesComponent,
+    ProfileboxComponent,
+    EventsComponent,
+    ChartjsComponent,
+    ApexchartsComponent,
+   
   ],
   imports: [
     BrowserModule,

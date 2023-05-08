@@ -29,7 +29,7 @@ export class SidenavComponent implements OnInit {
         },
         {
           link_name: 'Dashboard 2',
-          link: '/dashboard'
+          link: '/dashboard2'
         }
       ]
     }, {
@@ -42,11 +42,11 @@ export class SidenavComponent implements OnInit {
           link: "/login",
         }, {
           link_name: "Register",
-          link: "Register",
+          link: "/register",
         },
         {
           link_name: " Forget Password",
-          link: "Forget ",
+          link: "/forgotpassword",
         },
       ]
     },
@@ -57,13 +57,13 @@ export class SidenavComponent implements OnInit {
       sub_menu: [
         {
           link_name: "Mail Box",
-          link: "Chart Boxes1",
+          link: "mailbox",
         }, {
           link_name: "Chat",
-          link: " Profile Box",
+          link: "chat",
         }, {
           link_name: "FAQ",
-          link: "data",
+          link: "faq",
         }
       ]
     }, {
@@ -73,10 +73,10 @@ export class SidenavComponent implements OnInit {
       sub_menu: [
         {
           link_name: "Elements",
-          link: "data3",
+          link: "elements",
         }, {
           link_name: "Widgets",
-          link: "/posts/login-form",
+          link: "widgets",
         },
       ]
     }, {
@@ -95,14 +95,14 @@ export class SidenavComponent implements OnInit {
       icon: "bx bxs-widget",
       sub_menu: [
         {
-          link_name: "Data 5",
-          link: "Chart Boxes1",
+          link_name: "Chart Boxes",
+          link: "chartbox",
         }, {
-          link_name: "Data",
-          link: " Profile Box",
+          link_name: "Profile Box",
+          link: "profilebox",
         }, {
-          link_name: "Data 7",
-          link: "data",
+          link_name: "Events",
+          link: "events",
         }
       ]
     },  {
@@ -112,10 +112,10 @@ export class SidenavComponent implements OnInit {
       sub_menu: [
         {
           link_name: "Chart.Js",
-          link: "data", 
+          link: "chartjs", 
         },{
           link_name: "Apex Charts ",
-          link: "data",
+          link: "apexcharts",
         }
       ]
     }, {

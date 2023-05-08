@@ -283,7 +283,7 @@ export class DashboardComponent implements OnInit {
       size: 0
     };
     this.title1 = {
-      text: "Stock Price Movement",
+      text: "Total Death Report",
       align: "left"
     };
     this.fill1 = {
@@ -303,7 +303,7 @@ export class DashboardComponent implements OnInit {
         }
       },
       title: {
-        text: "Price"
+        text: "Report"
       }
     };
     this.xaxis1 = {
@@ -353,7 +353,7 @@ export class DashboardComponent implements OnInit {
       size: 0
     };
     this.title2 = {
-      text: "Stock Price Movement",
+      text: "Total Recover Report",
       align: "left"
     };
     this.fill2 = {
@@ -373,7 +373,7 @@ export class DashboardComponent implements OnInit {
         }
       },
       title: {
-        text: "Price"
+        text: "Report"
       }
     };
     this.xaxis2 = {
