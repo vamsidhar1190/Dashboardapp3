@@ -102,8 +102,12 @@ overflow: hidden;
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   background-color:white;
+}
+.header-content-info{
+  float: right !important;
 }
 .icon{
   // color: green;
@@ -152,7 +156,7 @@ overflow: hidden;
 }
 
 .sidebar .logo-details {
-  width: 100%;
+  width: 80%;
   padding: 20px 10px 10px 10px;
 }
 
@@ -433,8 +437,4 @@ visibility: hidden;
 }
 .sidebar{
   box-shadow: 1px 0px #ccc;
-}
-.header-content-info{
-  position: relative;
-  left: 37px;
 }

@@ -14,7 +14,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/2.png',
             price: 65,
-            category: 'Doctor',
+            category: 'Neurologist',
             quantity: 24,
             inventoryStatus: 'INSTOCK',
             rating: 5
@@ -26,7 +26,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/3.png',
             price: 72,
-            category: 'Doctor',
+            category: 'Dermatologist',
             quantity: 61,
             inventoryStatus: 'OUTOFSTOCK',
             rating: 4
@@ -38,7 +38,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/4.png',
             price: 79,
-            category: 'Doctor',
+            category: 'Pediatrician',
             quantity: 2,
             inventoryStatus: 'LOWSTOCK',
             rating: 3
@@ -50,7 +50,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/5.png',
             price: 29,
-            category: 'Doctor',
+            category: 'Surgeon',
             quantity: 25,
             inventoryStatus: 'INSTOCK',
             rating: 5
@@ -62,7 +62,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/2.png',
             price: 15,
-            category: 'Doctor',
+            category: 'Oncologist',
             quantity: 73,
             inventoryStatus: 'INSTOCK',
             rating: 4
@@ -74,7 +74,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/3.png',
             price: 120,
-            category: 'Doctor',
+            category: 'Urologist',
             quantity: 0,
             inventoryStatus: 'OUTOFSTOCK',
             rating: 4
@@ -86,7 +86,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/5.png',
             price: 32,
-            category: 'Doctor',
+            category: 'Orthopaedist',
             quantity: 5,
             inventoryStatus: 'LOWSTOCK',
             rating: 3
@@ -98,7 +98,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/4.png',
             price: 34,
-            category: 'Doctor',
+            category: 'Cardiologist',
             quantity: 23,
             inventoryStatus: 'INSTOCK',
             rating: 5
@@ -110,7 +110,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/3.png',
             price: 99,
-            category: 'Doctor',
+            category: 'Dentist',
             quantity: 2,
             inventoryStatus: 'LOWSTOCK',
             rating: 4
@@ -122,7 +122,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/2.png',
             price: 299,
-            category: 'Doctor',
+            category: 'Podiatrist',
             quantity: 63,
             inventoryStatus: 'INSTOCK',
             rating: 3
@@ -134,7 +134,7 @@ export class DoctordataService {
             description: 'Product Description',
             image: './assets/4.png',
             price: 24,
-            category: 'Doctor',
+            category: 'Ophthalmology',
             quantity: 0,
             inventoryStatus: 'OUTOFSTOCK',
             rating: 4
