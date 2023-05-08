@@ -102,6 +102,7 @@ overflow: hidden;
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   background-color:white;
 }
@@ -152,7 +153,7 @@ overflow: hidden;
 }
 
 .sidebar .logo-details {
-  width: 100%;
+  width: 80%;
   padding: 20px 10px 10px 10px;
 }
 
@@ -434,7 +435,53 @@ visibility: hidden;
 .sidebar{
   box-shadow: 1px 0px #ccc;
 }
-.header-content-info{
-  position: relative;
-  left: 37px;
+
+@media only screen and (max-width: 767px ){
+  .sidebar-close{
+    display: none;
+    width: 100%;
+  }
+  .sidebar.sidebar-close[_ngcontent-mbt-c1] ~ .home-section[_ngcontent-mbt-c1] {
+    left: 0px !important;
+    width:0 !important; 
 }
+  .home-section {
+    width: 100%;
+  }
+  .home-section .title {
+    justify-content: flex-start !important;
+    align-items: center;
+}
+.home-section {
+  height: 100vh;
+  left: 0px !important;
+}
+.header-content-info{
+  display: flex;
+  align-items: center;
+}
+.header-content-info div{
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.header-content-info div i{
+  font-size: 16px !important;
+}
+.sidebar.sidebar-close ~ .home-section {
+   width: calc(100% - 0px) !important; 
+}
+.hamburger-menu{
+  bottom: -8px;
+  left: 0;
+}
+.profile-imgs {
+  height: 30px;
+  width: 30px;}
+
+
+
+}
+.home-header  .form-group{
+    padding-left: 10px;
+  }
