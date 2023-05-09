@@ -11,12 +11,11 @@ import {
   ApexFill,
   ApexMarkers,
   ApexTooltip,
-  ApexNonAxisChartSeries
+  ApexNonAxisChartSeries,
 } from 'ng-apexcharts';
 import { TreeNode } from 'primeng/api';
 import { dataSeries } from './data-series';
 import { DoctordataService } from '../doctordata.service';
-
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -27,15 +26,12 @@ export type ChartOptions = {
   xaxis: ApexXAxis;
 };
 
-
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-
   series1!: ApexAxisChartSeries | ApexNonAxisChartSeries;
   chart1!: ApexChart;
   dataLabels1!: ApexDataLabels;
@@ -56,8 +52,7 @@ export class DashboardComponent implements OnInit {
   xaxis2!: ApexXAxis;
   tooltip2!: ApexTooltip;
 
-
-  @ViewChild("chart") chart!: ChartComponent;
+  @ViewChild('chart') chart!: ChartComponent;
   public chartOptions!: ChartOptions;
 
   files!: TreeNode[];
@@ -69,67 +64,34 @@ export class DashboardComponent implements OnInit {
   Doctordata!: DoctordataService[];
 
   responsiveOptions!: any[];
-  doctor!:any[];
+  doctor!: any[];
 
-  constructor(private doctordata: DoctordataService) { }
+  constructor(private doctordata: DoctordataService) {}
 
-  
   ngOnInit(): void {
     this.charts();
     this.tabledata();
     this.columchart();
     this.columchart2();
     this.doctorsdata();
-    
-
   }
 
   charts() {
     this.chartOptions = {
       series: [
         {
-          name: "Cash Flow",
+          name: 'Cash Flow',
           data: [
-            1.45,
-            5.42,
-            5.9,
-            -0.42,
-            -12.6,
-            -18.1,
-            -18.2,
-            -14.16,
-            -11.1,
-            -6.09,
-            0.34,
-            3.88,
-            13.07,
-            5.8,
-            2,
-            7.37,
-            8.1,
-            13.57,
-            15.75,
-            17.1,
-            19.8,
-            -27.03,
-            -54.4,
-            -47.2,
-            -43.3,
-            -18.6,
-            -48.6,
-            -41.1,
-            -39.6,
-            -37.6,
-            -29.4,
-            -21.4,
-            -2.4
-          ]
-        }
+            1.45, 5.42, 5.9, -0.42, -12.6, -18.1, -18.2, -14.16, -11.1, -6.09,
+            0.34, 3.88, 13.07, 5.8, 2, 7.37, 8.1, 13.57, 15.75, 17.1, 19.8,
+            -27.03, -54.4, -47.2, -43.3, -18.6, -48.6, -41.1, -39.6, -37.6,
+            -29.4, -21.4, -2.4,
+          ],
+        },
       ],
       chart: {
-        type: "bar",
+        type: 'bar',
         height: 350,
-        
       },
       plotOptions: {
         bar: {
@@ -138,81 +100,82 @@ export class DashboardComponent implements OnInit {
               {
                 from: -100,
                 to: -46,
-                color: "#F15B46"
+                color: '#F15B46',
               },
               {
                 from: -45,
                 to: 0,
-                color: "#FEB019"
-              }
-            ]
+                color: '#FEB019',
+              },
+            ],
           },
-          columnWidth: "80%"
-        }
+          columnWidth: '80%',
+        },
       },
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       yaxis: {
-        
         labels: {
           formatter: function (y) {
-            return y.toFixed(0) + "%";
-          }
-        }
+            return y.toFixed(0) + '%';
+          },
+        },
       },
       xaxis: {
-        type: "datetime",
+        type: 'datetime',
         categories: [
-          "2011-01-01",
-          "2011-02-01",
-          "2011-03-01",
-          "2011-04-01",
-          "2011-05-01",
-          "2011-06-01",
-          "2011-07-01",
-          "2011-08-01",
-          "2011-09-01",
-          "2011-10-01",
-          "2011-11-01",
-          "2011-12-01",
-          "2012-01-01",
-          "2012-02-01",
-          "2012-03-01",
-          "2012-04-01",
-          "2012-05-01",
-          "2012-06-01",
-          "2012-07-01",
-          "2012-08-01",
-          "2012-09-01",
-          "2012-10-01",
-          "2012-11-01",
-          "2012-12-01",
-          "2013-01-01",
-          "2013-02-01",
-          "2013-03-01",
-          "2013-04-01",
-          "2013-05-01",
-          "2013-06-01",
-          "2013-07-01",
-          "2013-08-01",
-          "2013-09-01"
+          '2011-01-01',
+          '2011-02-01',
+          '2011-03-01',
+          '2011-04-01',
+          '2011-05-01',
+          '2011-06-01',
+          '2011-07-01',
+          '2011-08-01',
+          '2011-09-01',
+          '2011-10-01',
+          '2011-11-01',
+          '2011-12-01',
+          '2012-01-01',
+          '2012-02-01',
+          '2012-03-01',
+          '2012-04-01',
+          '2012-05-01',
+          '2012-06-01',
+          '2012-07-01',
+          '2012-08-01',
+          '2012-09-01',
+          '2012-10-01',
+          '2012-11-01',
+          '2012-12-01',
+          '2013-01-01',
+          '2013-02-01',
+          '2013-03-01',
+          '2013-04-01',
+          '2013-05-01',
+          '2013-06-01',
+          '2013-07-01',
+          '2013-08-01',
+          '2013-09-01',
         ],
         labels: {
-          rotate: -90
-        }
-      }
+          rotate: -90,
+        },
+      },
     };
   }
 
   tabledata() {
     this.files = [];
-    const images = ["https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg",
-      "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
-      "https://mirimstudent25.files.wordpress.com/2013/10/movietalk-despicableme630-jpg_002144.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/JPEG_example_down.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/JPEG_example_down.jpg",
-      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"];
+    const images = [
+      'https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg',
+      'https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
+      'https://mirimstudent25.files.wordpress.com/2013/10/movietalk-despicableme630-jpg_002144.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/c/c5/JPEG_example_down.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/c/c5/JPEG_example_down.jpg',
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    ];
 
     for (let i = 0; i < 6; i++) {
       const node = {
@@ -222,16 +185,16 @@ export class DashboardComponent implements OnInit {
           department: 'Monte Carlo ',
           appointment: '11/03/2020',
           serial: '#dfsadfnk',
-          amount: Math.floor(Math.random() * 1000) + 1 + 'Rs'
+          amount: Math.floor(Math.random() * 1000) + 1 + 'Rs',
         },
         children: [
           {
             data: {
               customer: 'Status Update',
               product: Math.floor(Math.random() * 1000) + 1 + 'kb',
-            }
-          }
-        ]
+            },
+          },
+        ],
       };
       this.files.push(node);
     }
@@ -242,7 +205,7 @@ export class DashboardComponent implements OnInit {
       { field: 'department', header: 'Department' },
       { field: 'appointment', header: 'Appointment Date' },
       { field: 'serial', header: 'Serial Number' },
-      { field: 'amount', header: 'Amount' }
+      { field: 'amount', header: 'Amount' },
     ];
   }
   columchart() {
@@ -255,62 +218,61 @@ export class DashboardComponent implements OnInit {
 
     this.series1 = [
       {
-        name: "XYZ MOTORS",
+        name: 'Covid Patients',
         data: dates,
-        color: "#8e44ad"
-      }
+        color: '#8e44ad',
+      },
     ];
     this.chart1 = {
-      type: "area",
+      type: 'area',
       stacked: false,
       height: 300,
       zoom: {
-        type: "x",
+        type: 'x',
         enabled: true,
-        autoScaleYaxis: true
+        autoScaleYaxis: true,
       },
       toolbar: {
-        autoSelected: "zoom"
-      }
+        autoSelected: 'zoom',
+      },
     };
     this.dataLabels1 = {
-      enabled: false
+      enabled: false,
     };
     this.markers1 = {
-      size: 0
+      size: 0,
     };
     this.title1 = {
-      text: "Total Covid Report",
-      align: "left"
+      text: 'Total Covid Report',
+      align: 'left',
     };
     this.fill1 = {
-      type: "gradient",
+      type: 'gradient',
       gradient: {
         shadeIntensity: 1,
         inverseColors: false,
         opacityFrom: 0.5,
         opacityTo: 0,
-        stops: [0, 90, 100]
-      }
+        stops: [0, 90, 100],
+      },
     };
     this.yaxis1 = {
       labels: {
         formatter: function (val) {
           return (val / 1000000).toFixed(0);
-        }
+        },
       },
-     
     };
     this.xaxis1 = {
-      type: "datetime"
+      type: 'datetime',
     };
     this.tooltip1 = {
       shared: false,
       y: {
         formatter: function (val) {
           return (val / 1000000).toFixed(0);
-        }
-      }
+        },
+      },
     };
   }
   columchart2() {
@@ -323,64 +285,62 @@ export class DashboardComponent implements OnInit {
 
     this.series2 = [
       {
-        name: "XYZ MOTORS",
+        name: 'Covid Patients',
         data: dates,
-        color: "#2DAAB8"
-      }
+        color: '#2DAAB8',
+      },
     ];
     this.chart2 = {
-      type: "area",
+      type: 'area',
       stacked: false,
       height: 300,
       zoom: {
-        type: "x",
+        type: 'x',
         enabled: true,
-        autoScaleYaxis: true
+        autoScaleYaxis: true,
       },
       toolbar: {
-        autoSelected: "zoom"
-      }
+        autoSelected: 'zoom',
+      },
     };
     this.dataLabels2 = {
-      enabled: false
+      enabled: false,
     };
     this.markers2 = {
-      size: 0
+      size: 0,
     };
     this.title2 = {
-      text: "Total Recover Report",
-      align: "left"
+      text: 'Total Recover Report',
+      align: 'left',
     };
     this.fill2 = {
-      type: "gradient",
+      type: 'gradient',
       gradient: {
         shadeIntensity: 1,
         inverseColors: false,
         opacityFrom: 0.5,
         opacityTo: 0,
-        stops: [0, 90, 100]
-      }
+        stops: [0, 90, 100],
+      },
     };
     this.yaxis2 = {
       labels: {
         formatter: function (val) {
           return (val / 1000000).toFixed(0);
-        }
+        },
       },
-    
     };
     this.xaxis2 = {
-      type: "datetime"
+      type: 'datetime',
     };
     this.tooltip2 = {
       shared: false,
       y: {
         formatter: function (val) {
           return (val / 1000000).toFixed(0);
-        }
-      }
+        },
+      },
     };
-
   }
 
   doctorsdata() {
@@ -392,33 +352,18 @@ export class DashboardComponent implements OnInit {
       {
         breakpoint: '1199px',
         numVisible: 1,
-        numScroll: 1
+        numScroll: 1,
       },
       {
         breakpoint: '991px',
         numVisible: 2,
-        numScroll: 1
+        numScroll: 1,
       },
       {
         breakpoint: '767px',
         numVisible: 1,
-        numScroll: 1
-      }
+        numScroll: 1,
+      },
     ];
   }
-
- 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
