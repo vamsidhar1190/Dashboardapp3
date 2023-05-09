@@ -57,10 +57,11 @@
 
 }
 
-.boxheader-wrapper .progress{
+.boxheader-wrapper .progress {
     margin-bottom: 12px;
 
 }
+
 .activitybell {
     position: relative;
     top: 5px;
@@ -175,30 +176,37 @@
     font-size: 20px;
     color: #818e94;
 }
-.hospital-content-wrapper{
-    
+
+.hospital-content-wrapper {
+
     display: flex;
     justify-content: space-between;
 }
-.hospital-content-wrapper .table-hospital-content-block-second-info-1{
+
+.hospital-content-wrapper .table-hospital-content-block-second-info-1 {
     width: 59%;
 
 }
-.hospital-content-wrapper .table-hospital-content-block-second-info-2{
+
+.hospital-content-wrapper .table-hospital-content-block-second-info-2 {
     width: 39%;
 }
+
 .font-italic-heading {
     color: #818e94;
 }
-.surface-border-img-block-heading{
+
+.surface-border-img-block-heading {
     font-size: 15px;
     color: #2e4765;
 }
+
 .cardheight-all-parts-info {
     width: 50%;
 
 }
-.surface-border-img-block-info-content{
+
+.surface-border-img-block-info-content {
     font-size: 14px;
     padding: 5px 0px;
 }
@@ -346,72 +354,99 @@
     .four-card-block .card-fourth {
         width: 48%;
     }
-   
+
     .four-card-block .card-fourth .dataheight {
         margin-right: 0px;
     }
-    .chart-global-bar h6{
+
+    .chart-global-bar h6 {
         font-size: 32px;
         text-align: center;
     }
-    .chart-global-bar   .justify-content-around {
-        flex-wrap: wrap;}
-.chart-global-bar-content-info{
-    width: 46%;
-    text-align: center;
-}
-.parent3-container-block {
-    flex-wrap: wrap;
-}
-.table-hospital-content-block {
-    width: 100%;
-}
-.table-hospital-content-block-second{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.table-hospital-content-block-second-info,
-.table-hospital-content-block-second-info-2{
-    padding: 5px;
-    width: 47%;
-}
-.table-hospital-content-block-second {
-width: 100%; 
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-.table-hospital-content-bluw {
-    font-size: 24px;
-    text-align: center;}
-    .cardheight-all-parts-wrapper{
+
+    .chart-global-bar .justify-content-around {
         flex-wrap: wrap;
     }
+
+    .chart-global-bar-content-info {
+        width: 46%;
+        text-align: center;
+    }
+
+    .parent3-container-block {
+        flex-wrap: wrap;
+    }
+
+    .table-hospital-content-block {
+        width: 100%;
+    }
+
+    .table-hospital-content-block-second {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .table-hospital-content-block-second-info,
+    .table-hospital-content-block-second-info-2 {
+        padding: 5px;
+        width: 47%;
+    }
+
+    .table-hospital-content-block-second {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .table-hospital-content-bluw {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .cardheight-all-parts-wrapper {
+        flex-wrap: wrap;
+    }
+
     .cardheight-all-parts-info {
         width: 100%;
     }
-    .boxheader{justify-content: center;}
-    .timeline h6, .timeline p{
+
+    .boxheader {
+        justify-content: center;
+    }
+
+    .timeline h6,
+    .timeline p {
         margin: 0 !important;
         font-size: 19px;
     }
+
     .boxheader-wrapper {
         width: 100%;
 
     }
+
     .hospital-content-wrapper {
-        flex-direction: column-reverse;}
-        .table-hospital-content-block-second-info, .table-hospital-content-block-second-info-2{
-            width: 100%;
-        }
-        .hospital-content-wrapper .table-hospital-content-block-second-info-1 {
-            width: 100%;
-            margin: 20px 0px;
-        }
-        .hospital-content-wrapper .table-hospital-content-block-second-info-2{
-            width: 100%;
-        }
+        flex-direction: column-reverse;
+    }
+    .table-hospital-content-block-second-info{
+        margin-top: 20px;
+    }
+    .table-hospital-content-block-second-info,
+    .table-hospital-content-block-second-info-2 {
+        width: 100%;
+    }
+
+    .hospital-content-wrapper .table-hospital-content-block-second-info-1 {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .hospital-content-wrapper .table-hospital-content-block-second-info-2 {
+        width: 100%;
+    }
 
 }
 
@@ -474,7 +509,8 @@ justify-content: space-between;
     .table-hospital-content-block th {
         font-size: 12px !important;
     }
-    .table-image img{
+
+    .table-image img {
         margin-left: 16%;
     }
 
@@ -493,24 +529,32 @@ justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
     }
-    .table-hospital-content-block-second-info{
+
+    .table-hospital-content-block-second-info {
         width: 100%;
         margin-top: 20px;
     }
+
     .table-hospital-content-block {
         text-align: center;
     }
+
     .hospital-content-wrapper {
-        flex-direction: column-reverse;}
+        flex-direction: column-reverse;
+    }
+
     .cardheight-all-parts-info {
         width: 100%;
     }
+
     .cardheight {
         padding: 10px;
-        background-color: white;}
+        background-color: white;
+    }
+
     .hospital-content-wrapper .table-hospital-content-block-second-info-1 {
         width: 100%;
-        
+
     }
 
 
@@ -521,8 +565,10 @@ justify-content: space-between;
     .boxheader {
         justify-content: center;
     }
-    .boxheader-wrapper{
-        padding: 10px;}
+
+    .boxheader-wrapper {
+        padding: 10px;
+    }
 
     .boxheader-wrapper {
         width: 100%;
@@ -535,6 +581,7 @@ justify-content: space-between;
     .copy-right-info-footer p {
         font-size: 13px;
     }
+
     .boxheader-wrapper[_ngcontent-osk-c42] .progress[_ngcontent-osk-c42] {
         margin-bottom: 6px;
     }
@@ -557,6 +604,7 @@ justify-content: space-between;
     .timeline p {
         font-size: 14px;
     }
+
     .hospital-content-wrapper .table-hospital-content-block-second-info-2 {
         width: 100%;
         margin-bottom: 20px;
