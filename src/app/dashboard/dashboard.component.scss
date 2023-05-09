@@ -51,7 +51,7 @@
 
 .cardheight .activitywrap p {
     font-size: 14px;
-    line-height: 15px;
+    line-height: 18px;
     color: #818e94;
     font-weight: 400;
 
@@ -114,10 +114,6 @@
 
 }
 
-.four-card-block .card-fourth .dataheight {
-    margin-right: 25%;
-
-}
 
 .chart-global-bar .font-semibold {
     font-size: 20px;
@@ -257,8 +253,12 @@
 
 .boxheader-wrapper {
     width: 50%;
-    padding: 20px;
-    max-height: 400px;
+    padding: 30px;
+}
+.copy-right-info-footer a{
+    color: #2DAAB8 !important;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .boxheader-wrapper-info {
@@ -339,7 +339,30 @@
     object-fit: cover;
     margin-left: 30%;
 }
+.four-card-block  .cards {
+    justify-content: space-around !important;
+    align-items: center;
+    gap: 20px;
+}
+.dataheight{
+    // margin-right: 25%;
+}
+.dataheight-highlight-info{
+    color: white;
+}
+.dataheight-highlight{
+    font-size: 35px; font-weight: bold;color: white
+}
+.card-fourth span{
+    color: white;
+}
+.card-third h3{
+    font-size: 35px; font-weight: bold; color: white
+}
 
+.card-third span{
+    color: white;
+}
 //tab responsive starts here
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .four-card-block {
