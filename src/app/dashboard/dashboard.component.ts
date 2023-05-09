@@ -280,7 +280,7 @@ export class DashboardComponent implements OnInit {
       size: 0
     };
     this.title1 = {
-      text: "Total Death Report",
+      text: "Total Covid Report",
       align: "left"
     };
     this.fill1 = {

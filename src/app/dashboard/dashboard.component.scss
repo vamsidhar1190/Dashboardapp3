@@ -20,15 +20,17 @@
     margin-bottom: 0px;
     align-items: center;
 }
-.timeline h6, 
-.timeline p{
+
+.timeline h6,
+.timeline p {
     margin: 0 !important;
 }
+
 .cardheight {
     padding: 30px;
     background-color: white;
     border-radius: 10px;
-}   
+}
 
 .timeline ul {
     border-left: 1px solid #ecfdff;
@@ -49,12 +51,16 @@
 
 .cardheight .activitywrap p {
     font-size: 14px;
-    line-height: 28px;
+    line-height: 15px;
     color: #818e94;
     font-weight: 400;
 
 }
 
+.boxheader-wrapper .progress{
+    margin-bottom: 12px;
+
+}
 .activitybell {
     position: relative;
     top: 5px;
@@ -64,18 +70,498 @@
 .bar {
     height: 20px;
     background-color: blue;
-  }
+}
 
-  .footer{
+.footer {
     justify-content: center;
-  }
-  .chart-content-block{
+}
+
+.chart-content-block {
     overflow: hidden !important;
-  }
-  .chart-content-block    .apexcharts-canvas{
+}
+
+.chart-content-block .apexcharts-canvas {
     width: auto !important;
-  }
-  .chart-content-block  .apexcharts-canvas{
-width: auto !important;
+}
+
+.chart-content-block .apexcharts-canvas {
+    width: auto !important;
+
+}
+
+.four-card-block .card-first {
+    width: 25%;
+    background-color: rgba(254, 176, 25, 0.85);
+
+}
+
+.four-card-block .card-second {
+    width: 25%;
+    background-color: rgba(0, 143, 251, 0.85);
+
+}
+
+.four-card-block .card-third {
+    width: 25%;
+    background-color: #68ad68;
+
+}
+
+.four-card-block .card-fourth {
+    width: 25%;
+    background-color: #4c4a3e;
+
+}
+
+.four-card-block .card-fourth .dataheight {
+    margin-right: 25%;
+
+}
+
+.chart-global-bar .font-semibold {
+    font-size: 20px;
+}
+
+
+.chart-global-bar .font-semibold {
+    font-size: 30px;
+}
+
+
+
+.surface-border-img-content {
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+    margin: 10px auto;
+    border-radius: 50%;
+
+
+}
+
+.surface-border-img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parent3-container-block {
+    // width:;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.table-hospital-content-block {
+    width: 59%;
+}
+
+.table-hospital-content-block-second {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-hospital-content-block-second-info {
+    width: 39%;
+    padding: 20px;
+}
+
+.table-hospital-content-block-second-info {
+    padding: 20px;
+}
+
+.table-hospital-content-bluw {
+    font-size: 20px;
+    color: #818e94;
+}
+.hospital-content-wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.hospital-content-wrapper .table-hospital-content-block-second-info-1{
+    width: 59%;
+
+}
+.hospital-content-wrapper .table-hospital-content-block-second-info-2{
+    width: 39%;
+}
+.font-italic-heading {
+    color: #818e94;
+}
+.surface-border-img-block-heading{
+    font-size: 15px;
+    color: #2e4765;
+}
+.cardheight-all-parts-info {
+    width: 50%;
+
+}
+.surface-border-img-block-info-content{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.activitybell-block {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.activitybell-block-heading {
+    color: #2e4765;
+}
+
+.activitybell-block-content-div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.activitybell-block-content-div-heading {
+
+
+    color: #2e4765;
+}
+
+.timeline-block-wrapper-block {
+
+    // width: 10px;
+    // height: 10px;
+    border-radius: 50%;
+}
+
+.timeline-block-wrapper-block-info {
+    color: #2e4765;
+}
+
+.timeline-block-second {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.timeline-block-second-heading {
+    color: #2e4765;
+    margin: 0px;
+}
+
+.boxheader-wrapper {
+    width: 50%;
+    padding: 20px;
+    max-height: 400px;
+}
+
+.boxheader-wrapper-info {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.boxheader-wrapper-info-per {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.boxheader-wrapper-info-per-progress {
+    width: 25%
+}
+
+.boxheader-wrapper-info-per-progress {
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.boxheader-wrapper-info-per-progress-per {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.per-bar-info {
+    width: 50%;
+}
+
+.per-bar-info-heading {
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.per-bar-info-heading-gain {
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.bg-warning-gain {
+    width: 75%
+}
+
+.health-condistions-info {
+    width: 85%
+}
+
+.copy-right-info {
+    padding: 0px 5px;
+}
+
+.parent3-container-block {
+
+    align-items: center;
+
+}
+
+.table-hospital-content-block {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-image {
+    padding: 5px 3px !important;
+
+}
+
+.table-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    // padding: 0px !important;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 30%;
+}
+
+//tab responsive starts here
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .four-card-block {
+        flex-wrap: wrap;
+        margin: 1rem !important;
+        padding: 0px !important;
+    }
+
+    .four-card-block .card-first,
+    .four-card-block .card-second,
+    .four-card-block .card-third,
+    .four-card-block .card-fourth {
+        width: 48%;
+    }
+   
+    .four-card-block .card-fourth .dataheight {
+        margin-right: 0px;
+    }
+    .chart-global-bar h6{
+        font-size: 32px;
+        text-align: center;
+    }
+    .chart-global-bar   .justify-content-around {
+        flex-wrap: wrap;}
+.chart-global-bar-content-info{
+    width: 46%;
+    text-align: center;
+}
+.parent3-container-block {
+    flex-wrap: wrap;
+}
+.table-hospital-content-block {
+    width: 100%;
+}
+.table-hospital-content-block-second{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-hospital-content-block-second-info,
+.table-hospital-content-block-second-info-2{
+    padding: 5px;
+    width: 47%;
+}
+.table-hospital-content-block-second {
+width: 100%; 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.table-hospital-content-bluw {
+    font-size: 24px;
+    text-align: center;}
+    .cardheight-all-parts-wrapper{
+        flex-wrap: wrap;
+    }
+    .cardheight-all-parts-info {
+        width: 100%;
+    }
+    .boxheader{justify-content: center;}
+    .timeline h6, .timeline p{
+        margin: 0 !important;
+        font-size: 19px;
+    }
+    .boxheader-wrapper {
+        width: 100%;
 
     }
+    .hospital-content-wrapper {
+        flex-direction: column-reverse;}
+        .table-hospital-content-block-second-info, .table-hospital-content-block-second-info-2{
+            width: 100%;
+        }
+        .hospital-content-wrapper .table-hospital-content-block-second-info-1 {
+            width: 100%;
+            margin: 20px 0px;
+        }
+        .hospital-content-wrapper .table-hospital-content-block-second-info-2{
+            width: 100%;
+        }
+
+}
+
+//tab responsive ends here
+
+// mobile responsive starts here
+@media only screen and (max-width: 767px) {
+    .four-card-block {
+        flex-direction: column;
+    }
+
+    .four-card-block .card {
+        width: 100%;
+    }
+
+    .four-card-block .card-fourth .dataheight {
+        margin-right: 0 !important;
+    }
+
+    .chart-global-bar .font-semibold {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .chart-global-bar-content-block {
+        flex-wrap: wrap;
+        padding: 0px !important;
+        margin: 0px !important;
+
+    }
+
+    .chart-global-bar-content-info {
+        text-align: center;
+    }
+
+    .chart-global-bar-content-info p {
+        font-size: 17px;
+        color: #2e4765;
+
+    }
+
+    .chart-global-bar-content-info span {
+        font-size: 13px;
+        color: #b2b5c0;
+
+    }
+
+    .chart-global-bar-content-block .justify-content-center {
+        width: 50%;
+    }
+
+    .parent3-container-block {
+        border-radius: 8px;
+        overflow: hidden;
+        width: 91%;
+        flex-direction: column;
+
+    }
+
+    .table-hospital-content-block th {
+        font-size: 12px !important;
+    }
+    .table-image img{
+        margin-left: 16%;
+    }
+
+    .table-hospital-content-block {
+        width: 100%;
+    }
+
+    .table-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .table-hospital-content-block-second {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .table-hospital-content-block-second-info{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .table-hospital-content-block {
+        text-align: center;
+    }
+    .hospital-content-wrapper {
+        flex-direction: column-reverse;}
+    .cardheight-all-parts-info {
+        width: 100%;
+    }
+    .cardheight {
+        padding: 10px;
+        background-color: white;}
+    .hospital-content-wrapper .table-hospital-content-block-second-info-1 {
+        width: 100%;
+        
+    }
+
+
+    .cardheight-all-parts-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .boxheader {
+        justify-content: center;
+    }
+    .boxheader-wrapper{
+        padding: 10px;}
+
+    .boxheader-wrapper {
+        width: 100%;
+    }
+
+    .copy-right-info-footer {
+        margin: 20px auto 0px auto !important;
+    }
+
+    .copy-right-info-footer p {
+        font-size: 13px;
+    }
+    .boxheader-wrapper[_ngcontent-osk-c42] .progress[_ngcontent-osk-c42] {
+        margin-bottom: 6px;
+    }
+
+    .p-treetable .p-treetable-tbody>tr>td {
+        font-size: 13px;
+    }
+
+    .boxheader h3 {
+        font-size: 14px;
+
+
+    }
+
+    .cardheight .activitywrap p {
+        font-size: 13px;
+    }
+
+    .timeline h6,
+    .timeline p {
+        font-size: 14px;
+    }
+    .hospital-content-wrapper .table-hospital-content-block-second-info-2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+// mobile responsive ends here
