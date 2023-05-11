@@ -186,6 +186,7 @@
 
 .hospital-content-wrapper .table-hospital-content-block-second-info-2 {
     width: 39%;
+    padding: 20px;
 }
 
 .font-italic-heading {
@@ -367,6 +368,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .four-card-block {
         flex-wrap: wrap;
+        justify-content: space-between;
         margin: 1rem !important;
         padding: 0px !important;
     }
@@ -412,7 +414,7 @@
 
     .table-hospital-content-block-second-info,
     .table-hospital-content-block-second-info-2 {
-        padding: 5px;
+        padding: 20px;
         width: 47%;
     }
 
@@ -632,7 +634,14 @@
         width: 100%;
         margin-bottom: 20px;
     }
-
+    .table-hospital-content-block-second-info {
+        padding: 5px !important;
+    }
+    
+        .hospital-content-wrapper  .table-hospital-content-block-second-info-2 {
+            padding: 5px !important;
+        }
+       
 }
 
 // mobile responsive ends here

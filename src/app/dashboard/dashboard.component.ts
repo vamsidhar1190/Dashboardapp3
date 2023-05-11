@@ -255,7 +255,7 @@ export class DashboardComponent implements OnInit {
 
     this.series1 = [
       {
-        name: "XYZ MOTORS",
+        name: "Covid Patients",
         data: dates,
         color: "#8e44ad"
       }
@@ -323,7 +323,7 @@ export class DashboardComponent implements OnInit {
 
     this.series2 = [
       {
-        name: "XYZ MOTORS",
+        name: "Covid Patients",
         data: dates,
         color: "#2DAAB8"
       }
