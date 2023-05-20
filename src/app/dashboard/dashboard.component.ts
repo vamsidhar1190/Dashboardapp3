@@ -55,16 +55,16 @@ export class DashboardComponent implements OnInit {
   @ViewChild('chart') chart!: ChartComponent;
   public chartOptions!: ChartOptions;
 
-  files!: TreeNode[];
+  public files!: TreeNode[];
 
-  cols!: any[];
+  public cols!: any[];
 
-  events!: any[];
+  public events!: any[];
 
-  Doctordata!: DoctordataService[];
+  public Doctordata!: DoctordataService[];
 
-  responsiveOptions!: any[];
-  doctor!: any[];
+  public responsiveOptions!: any[];
+  public doctor!: any[];
 
   constructor(private doctordata: DoctordataService) {}
 
@@ -76,7 +76,7 @@ export class DashboardComponent implements OnInit {
     this.doctorsdata();
   }
 
-  charts() {
+  public charts():void {
     this.chartOptions = {
       series: [
         {
@@ -166,7 +166,7 @@ export class DashboardComponent implements OnInit {
     };
   }
 
-  tabledata() {
+  public tabledata():void {
     this.files = [];
     const images = [
       'https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg',
@@ -208,7 +208,7 @@ export class DashboardComponent implements OnInit {
       { field: 'amount', header: 'Amount' },
     ];
   }
-  columchart() {
+ public  columchart():void {
     let ts2 = 1484418600000;
     let dates = [];
     for (let i = 0; i < 120; i++) {
@@ -275,7 +275,7 @@ export class DashboardComponent implements OnInit {
       },
     };
   }
-  columchart2() {
+  public columchart2():void {
     let ts2 = 1484418600000;
     let dates = [];
     for (let i = 0; i < 120; i++) {
@@ -343,7 +343,7 @@ export class DashboardComponent implements OnInit {
     };
   }
 
-  doctorsdata() {
+  public doctorsdata():void{
     this.doctordata.getProductsSmall().then((products) => {
       this.doctor = products;
     });

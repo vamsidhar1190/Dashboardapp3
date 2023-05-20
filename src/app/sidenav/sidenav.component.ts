@@ -9,15 +9,13 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
   }
 
+  public isSearchBarOpen:boolean = false;
+  public showSearchInput:boolean= true
 
 
-  isSearchBarOpen = false;
-  showSearchInput = true
+  public openSidebar: boolean = true;
 
-
-  openSidebar: boolean = true;
-
-  menuSidebar = [
+  public menuSidebar = [
     {
       link_name: "Dashboard",
       link: "/dashboard",
@@ -127,13 +125,13 @@ export class SidenavComponent implements OnInit {
   ]
 
 
-  showSubmenu(itemEl: HTMLElement) {
+  public showSubmenu(itemEl: HTMLElement):void{
     itemEl.classList.toggle("showMenu");
   }
 
-  isExpanded = false;
+  public isExpanded:boolean = false;
 
-  toggleSidebar() {
+  public toggleSidebar():void{
     this.isExpanded = !this.isExpanded;
   }
 
